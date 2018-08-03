@@ -1,312 +1,312 @@
 {
-	{
-		[
+	"0": [
+		{
 			"invNum" : "INV215",
 			"invDate": "8-2-2018",
 			"invAmt": "57.89",
 			"compId" : "C12345",
-			"product" : [
+			"product" : {
 				"prodId"  : "SU107",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV129",
 			"invDate": "11-01-2018",
 			"invAmt": "98.60",
 			"compId" : "C12345",
-			"product" : [
+			"product" : {
 				"prodId"  : "RC110",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV987",
 			"invDate": "26-12-2017",
 			"invAmt": "138.62",
 			"compId" : "C12345",
-			"product" : [
+			"product" : {
 				"prodId"  : "LC112",
 				"qty": "2"
-			]
-		]},
-	{	
-		[
+			}
+		}],
+	"1": [	
+		{
 			"invNum" : "INV119",
 			"invDate": "20-03-2018",
 			"invAmt": "74.54",
 			"compId" : "C45367",
-			"product" : [
+			"product" : {
 				"prodId"  : "SB108",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV096",
 			"invDate": "18-03-2014",
 			"invAmt": "59.98",
 			"compId" : "C45367",
-			"product" : [
+			"product" : {
 				"prodId"  : "RK103",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV234",
 			"invDate": "18-08-2015",
 			"invAmt": "129.29",
 			"compId" : "C45367",
-			"product" : [
+			"product" : {
 				"prodId"  : "BR106",
 				"qty": "1"
-			]
-		]},
-	{
-		[
+			}
+		}],
+	"2": [
+		{
 			"invNum" : "INV654",
 			"invDate": "11-01-2017",
 			"invAmt": "199.99",
 			"compId" : "C08943",
-			"product" : [
+			"product" : {
 				"prodId"  : "DG105",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV125",
 			"invDate": "09-09-2017",
 			"invAmt": "15.30",
 			"compId" : "C08943",
-			"product" : [
+			"product" : {
 				"prodId"  : "IM109",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV302",
 			"invDate": "03-12-2017",
 			"invAmt": "179.85",
 			"compId" : "C08943",
-			"product" : [
+			"product" : {
 				"prodId"  : "MW102",
 				"qty": "3"
-			]
-		]},
-	{	
-		[
+			}
+		}],
+	"3": [
+		{
 			"invNum" : "INV449",
 			"invDate": "11-01-2018",
 			"invAmt": "30.60",
 			"compId" : "C34876",
-			"product" : [
+			"product" : {
 				"prodId"  : "IM109",
 				"qty": "2"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV748",
 			"invDate": "08-07-2018",
 			"invAmt": "74.54",
 			"compId" : "C34876",
-			"product" : [
+			"product" : {
 				"prodId"  : "SB108",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV289",
 			"invDate": "08-01-2018",
 			"invAmt": "57.89",
 			"compId" : "C34876",
-			"product" : [
+			"product" : {
 				"prodId"  : "SU107",
 				"qty": "1"
-			]
-		]},
-	{	
-		[
+			}
+		}],
+	"4": [	
+		{
 			"invNum" : "INV021",
 			"invDate": "02-08-2018",
 			"invAmt": "219.99",
 			"compId" : "C89472",
-			"product" : [
+			"product" : {
 				"prodId"  : "AC101",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV409",
 			"invDate": "31-07-2018",
 			"invAmt": "59.95",
 			"compId" : "C89472",
-			"product" : [
+			"product" : {
 				"prodId"  : "MW102",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV117",
 			"invDate": "14-04-2018",
 			"invAmt": "129.00",
 			"compId" : "C89472",
-			"product" : [
+			"product" : {
 				"prodId"  : "GP104",
 				"qty": "1"
-			]
-		]},
-	{	
-		[
+			}
+		}],
+	"5": [	
+		{
 			"invNum" : "INV097",
 			"invDate": "29-05-2018",
 			"invAmt": "199.99",
 			"compId" : "C26543",
-			"product" : [
+			"product" : {
 				"prodId"  : "DG105",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV228",
 			"invDate": "02-02-2017",
 			"invAmt": "231.56",
 			"compId" : "C26543",
-			"product" : [
+			"product" : {
 				"prodId"  : "SU107",
 				"qty": "4"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV008",
 			"invDate": "20-10-2017",
 			"invAmt": "15.30",
 			"compId" : "C26543",
-			"product" : [
+			"product" : {
 				"prodId"  : "IM109",
 				"qty": "1"
-			]
-		]},
-    {
-		[
+			}
+		}],
+    "6": [
+		{
 			"invNum" : "INV095",
 			"invDate": "22-02-2015",
 			"invAmt": "69.31",
 			"compId" : "C19942",
-			"product" : [
+			"product" : {
 				"prodId"  : "LC112",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV021",
 			"invDate": "20-10-2016",
 			"invAmt": "74.54",
 			"compId" : "C19942",
-			"product" : [
+			"product" : {
 				"prodId"  : "SB108",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV009",
 			"invDate": "14-04-2018",
 			"invAmt": "399.98",
 			"compId" : "C19942",
-			"product" : [
+			"product" : {
 				"prodId"  : "DG105",
 				"qty": "2"
-			]
-		]},
-	{	
-		[
+			}
+		}],
+	"7": [	
+		{
 			"invNum" : "INV921",
 			"invDate": "01-08-2018",
 			"invAmt": "129.99",
 			"compId" : "C06137",
-			"product" : [
+			"product" : {
 				"prodId"  : "BR106",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV114",
 			"invDate": "02-08-2018",
 			"invAmt": "199.99",
 			"compId" : "C06137",
-			"product" : [
+			"product" : {
 				"prodId"  : "DG105",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV498",
 			"invDate": "09-10-2017",
 			"invAmt": "98.60",
 			"compId" : "C06137",
-			"product" : [
+			"product" : {
 				"prodId"  : "RC110",
 				"qty": "1"
-			]
-		]},
-	{	
-		[
+			}
+		}],
+	"8": [	
+		{
 			"invNum" : "INV093",
 			"invDate": "20-2-2018",
 			"invAmt": "39.62",
 			"compId" : "C13538",
-			"product" : [
+			"product" : {
 				"prodId"  : "SM111",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV093",
 			"invDate": "01-01-2018",
 			"invAmt": "57.89",
 			"compId" : "C13538",
-			"product" : [
+			"product" : {
 				"prodId"  : "SU107",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV350",
 			"invDate": "17-06-2018",
 			"invAmt": "98.60",
 			"compId" : "C13538",
-			"product" : [
+			"product" : {
 				"prodId"  : "RC110",
 				"qty": "1"
-			]
-		]},
-	{
-		[
+			}
+		}],
+	"9": [
+		{
 			"invNum" : "INV309",
 			"invDate": "22-03-2018",
 			"invAmt": "129.99",
 			"compId" : "C76389",
-			"product" : [
+			"product" : {
 				"prodId"  : "BR106",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV688",
 			"invDate": "10-10-2017",
 			"invAmt": "219.99",
 			"compId" : "C76389",
-			"product" : [
+			"product" : {
 				"prodId"  : "AC101",
 				"qty": "1"
-			]
-		],
-		[
+			}
+		},
+		{
 			"invNum" : "INV001",
 			"invDate": "21-08-2016",
 			"invAmt": "799.96",
 			"compId" : "C76389",
-			"product" : [
+			"product" : {
 				"prodId"  : "DG105",
 				"qty": "4"
-			]
-		]}
+			}
+		}]
 }
