@@ -9,7 +9,7 @@ $.ajax({
 /*
 $.ajax({
     type: 'GET',
-    url: '../json/product.json', 
+    url: 'json/product.json', 
     dataType: 'json',
     success: parseProduct,
     error: errMsg
@@ -34,9 +34,9 @@ function parseCustomer(data) {
     for (i = 0; i < cust.length; i++) {
         $(".customer").append(
             `
-            <li class="${i}">
+            <div class="${i}">
                 <button class="ui-btn moreInfo">Show More Info</button>
-            </li>
+            </div>
             `
         );
 
@@ -54,8 +54,8 @@ function parseCustomer(data) {
                     <button class="map ui-btn">Show on Maps</button>
                 </div>
                 <div class="invoices" id="${cust[i].compId}">
-                    <button class="showInvoices ui-btn">Show Invoices</button>
-                    <div data-role="collapsible" data-collapsed="true" class="invNum ui-btn">Invoice Numbers</div>
+                    <button onclick="${showInv(i)}" class="ui-btn">Show Invoices</button>
+                    <div class="showInvoices${i}"></div>
                 </div>
             </div>
             `
@@ -75,9 +75,17 @@ function parseInvoice(data) {
         for (j = 0; j < inv.length; j++) {
             $(`.showInvoices${i}`).append(`
             <div class="inv${j}">
-            
+            <p>Invoice Number: ${inv[j].invNum}</p>
+            <p>Invoice Date: ${inv[j].invDate}</p>
+            <p>Invoice Amount: ${inv[j].invAmt}</p>
+            <p>Product ID: ${inv[j].product.prodId}</p>
+            <p>Product Quantity: ${inv[j].product.qty}</p>
             </div>
             `)
         }
     }
+}
+
+function showInv(i) {
+    
 }
