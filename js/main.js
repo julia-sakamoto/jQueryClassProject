@@ -14,24 +14,24 @@ $.ajax({
     success: parseProduct,
     error: errMsg
 });
+*/
 
 $.ajax({
     type: 'GET',
-    url: '../json/invoice.json', 
+    url: 'json/invoice.json', 
     dataType: 'json',
     success: parseInvoice,
     error: errMsg
 });
-*/
 
 function errMsg(req, status, err) {
     alert(`${req} ${status} ${err}`);
 }
 
 function parseCustomer(data) {
-    var cust = data.customer;
+    let cust = data.customer;
 
-    for (var i = 0; i < cust.length; i++) {
+    for (i = 0; i < cust.length; i++) {
         $(".customer").append(
             `
             <li class="${i}">
@@ -53,7 +53,7 @@ function parseCustomer(data) {
                     <button class="email ui-btn">Send Email</button>
                     <button class="map ui-btn">Show on Maps</button>
                 </div>
-                <div class="invoices">
+                <div class="invoices" id="${cust[i].compId}">
                     <button class="showInvoices ui-btn">Show Invoices</button>
                     <div data-role="collapsible" data-collapsed="true" class="invNum ui-btn">Invoice Numbers</div>
                 </div>
@@ -69,6 +69,15 @@ function parseCustomer(data) {
     }
 }
 
-function moreInfo() {
-
+function parseInvoice(data) {
+    for (i = 0; i < data.length; i++) {
+        var inv = data[i];
+        for (j = 0; j < inv.length; j++) {
+            $(`.showInvoices${i}`).append(`
+            <div class="inv${j}">
+            
+            </div>
+            `)
+        }
+    }
 }
