@@ -16,6 +16,7 @@ $.ajax({
 });
 */
 
+
 $.ajax({
     type: 'GET',
     url: 'json/invoice.json', 
@@ -35,7 +36,8 @@ function parseCustomer(data) {
         $(".customer").append(
             `
             <div class="${i}">
-                <button class="ui-btn moreInfo">Show More Info</button>
+                //<button class="ui-btn moreInfo">Show More Info</button>
+				<div data-role="collapsible"><h2>Show More Info</h2></div>
             </div>
             `
         );
@@ -50,7 +52,7 @@ function parseCustomer(data) {
                 <p class="compEmail"></p>
 
                 <div class="controls">
-                    <button class="email ui-btn">Send Email</button>
+                    <button class="email ui-btn">Send Email!!!</button>
                     <button class="map ui-btn">Show on Maps</button>
                 </div>
                 <div class="invoices" id="${cust[i].compId}">
@@ -69,6 +71,7 @@ function parseCustomer(data) {
     }
 }
 
+<<<<<<< Updated upstream
 function parseInvoice(data) {
     for (i = 0; i < data.length; i++) {
         var inv = data[i];
@@ -88,4 +91,8 @@ function parseInvoice(data) {
 
 function showInv(i) {
     
+=======
+function moreInfo() {
+	
+>>>>>>> Stashed changes
 }
