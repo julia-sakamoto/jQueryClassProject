@@ -35,16 +35,14 @@ function parseCustomer(data) {
     for (i = 0; i < cust.length; i++) {
         $(".customer").append(
             `
-            <div class="${i}">
-                //<button class="ui-btn moreInfo">Show More Info</button>
-				<div data-role="collapsible"><h2>Show More Info</h2></div>
-            </div>
+            <a class="ui-btn moreInfo" onclick="showCust(${i})">${cust[i].compName}</a>
+            <div class="${i}" style="display: none;"></div>
             `
         );
 
         $(`.${i}`).append(
             `
-            <div data-role="collapsible" data-collapsed="true" class="additional">
+            <div data-collapsed="true" class="content">
                 <p class="compName"></p>
                 <p class="compAddr"></p>
                 <p class="compContact"></p>
@@ -52,11 +50,11 @@ function parseCustomer(data) {
                 <p class="compEmail"></p>
 
                 <div class="controls">
-                    <button class="email ui-btn">Send Email!!!</button>
-                    <button class="map ui-btn">Show on Maps</button>
+                    <a class="email ui-btn" href="mailto:${cust[i].compEmail}">Send Email</a>
+                    <a class="map ui-btn" href="mailto:${cust[i].compAddr}">Show on Map</a>
                 </div>
                 <div class="invoices" id="${cust[i].compId}">
-                    <button onclick="${showInv(i)}" class="ui-btn">Show Invoices</button>
+                    <a onclick="showInv(${i})" class="ui-btn">Show Invoices</a>
                     <div class="showInvoices${i}"></div>
                 </div>
             </div>
@@ -71,7 +69,6 @@ function parseCustomer(data) {
     }
 }
 
-<<<<<<< Updated upstream
 function parseInvoice(data) {
     for (i = 0; i < data.length; i++) {
         var inv = data[i];
@@ -89,10 +86,25 @@ function parseInvoice(data) {
     }
 }
 
+function show(i) {
+$(`.${i}`).show();
+
+}
+
 function showInv(i) {
-    
-=======
-function moreInfo() {
-	
->>>>>>> Stashed changes
+    var style = $(`.showInvoices${i}`).css("display");
+
+    if (style === "none")
+        $(`.showInvoices${i}`).slideDown();
+    else
+        $(`.showInvoices${i}`).slideUp();
+}
+
+function showCust(i) {
+    var style = $(`.${i}`).css("display");
+
+    if (style === "none")
+        $(`.${i}`).slideDown();
+    else
+        $(`.${i}`).slideUp();
 }
