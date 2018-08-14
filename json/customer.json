@@ -1,106 +1,97 @@
 {
-  "customer": [
-    {
-      "compId": "C12345",
-      "compName": "PC Shop Computers",
-      "compAddr": "579 Kerr St, Oakville, ON",
-      "compContact": "Tony Stark",
-      "compPhone": 9054548765,
-      "compEmail": "pcshop_support@gmail.com",
-      "invNum": ["INV215", "INV129", "INV987"]
+	"customer": [
+		{
+		  "compId": "C12345",
+		  "compName": "PC Shop Computers",
+		  "compAddr": "579 Kerr St, Oakville, ON",
+		  "compContact": "Tony Stark",
+		  "compPhone": 9054548765,
+		  "compEmail": "pcshop_support@gmail.com",
+		  "invNum": ["INV215", "INV129", "INV987"]
+		},
+		{
+		  "compId": "C45367",
+		  "compName": "Techville",
+		  "compAddr": "574 Kerr St, Oakville, ON",
+		  "compContact": "Steve Rogers" ,
+		  "compPhone": 9058498702,
+		  "compEmail": "techville_support@gmail.com",
+		  "invNum": ["INV119", "INV096", "INV234"]
+		},
+		{
+		  "compId": "C08943",
+		  "compName": "Ridgeway Computers & Electronics",
+		  "compAddr": "3065 Ridgeway Dr, Mississauga, ON",
+		  "compContact": "Bruce Wayne",
+		  "compPhone": 9056070096,
+		  "compEmail": "ridgeway_support@gmail.com",
+		  "invNum": ["INV654", "INV125", "INV302"]
+		},
+		{
+		  "compId": "C34876",
+		  "compName": "Canada Computers & Electronics",
+		  "compAddr": "2020 Appleby Line B2, Burlington, ON",
+		  "compContact": "Peter Parker",
+		  "compPhone": 9056351238,
+		  "compEmail": "canadacomp_support@gmail.com",
+		  "invNum": ["INV449", "INV748", "INV289"]
+		},
+		{
+		  "compId": "C89472",
+		  "compName": "The Computer Edge",
+		  "compAddr": "2387 Trafalgar Rd B7, Oakville, ON",
+		  "compContact": "Clarke Kent",
+		  "compPhone": 9052570082,
+		  "compEmail": "compedge_support@gmail.com",
+		  "invNum": ["INV021", "INV409", "INV117"]
 
-    },
-    {
-      "compId": "C45367",
-      "compName": "Techville",
-      "compAddr": "574 Kerr St, Oakville, ON",
-      "compContact": "Steve Rogers" ,
-      "compPhone": 9058498702,
-      "compEmail": "techville_support@gmail.com",
-      "invNum": ["INV119", "INV096", "INV234"]
+		},
+		{
+		  "compId": "C26543",
+		  "compName": "Computer Star",
+		  "compAddr": "3100 Ridgeway Dr, Mississauga, ON",
+		  "compContact": "Diana Prince",
+		  "compPhone": 9052728324,
+		  "compEmail": "compstar_support@gmail.com",
+		  "invNum": ["INV097", "INV228", "INV008"]
+		},
+		{
+		  "compId": "C19942",
+		  "compName": "Free Geek Toronto",
+		  "compAddr": "180 Sudbury St, Toronto, ON",
+		  "compContact": "Hamnah Atif",
+		  "compPhone": 4165723737,
+		  "compEmail": "freegeek_support@gmail.com",
+		  "invNum": ["INV095", "INV021", "INV009"]
+		},
+		{
+		  "compId": "C06137",
+		  "compName": "Signa Computer Systems",
+		  "compAddr": "3457 Yonge St, North York, ON",
+		  "compContact": "Julia Sakamoto",
+		  "compPhone": 4164889208,
+		  "compEmail": "signacomp_support@gmail.com",
+		  "invNum": ["INV921", "INV114", "INV498"]
+		},
+		{
+		  "compId": "C13538",
+		  "compName": "Rosedale Computers",
+		  "compAddr": "919 Yonge St, Toronto, ON",
+		  "compContact": "Jacklyn Ponce",
+		  "compPhone": 4169217673,
+		  "compEmail": "rosedale_support@gmail.com",
+		  "invNum": ["INV093", "INV036", "INV350"]
 
-    },
-    {
-      "compId": "C08943",
-      "compName": "Ridgeway Computers & Electronics",
-      "compAddr": "3065 Ridgeway Dr, Mississauga, ON",
-      "compContact": "Bruce Wayne",
-      "compPhone": 9056070096,
-      "compEmail": "ridgeway_support@gmail.com",
-      "invNum": ["INV654", "INV125", "INV302"]
+		},
+		{
+		  "compId": "C76389",
+		  "compName": "ASK Computers",
+		  "compAddr": "111 Front St E, Toronto, ON",
+		  "compContact": "Jimin Park",
+		  "compPhone": 4168629595,
+		  "compEmail": "askcomp_support@gmail.com",
+		  "invNum": ["INV309", "INV688", "INV001"]
 
-    },
-    {
-      "compId": "C34876",
-      "compName": "Canada Computers & Electronics",
-      "compAddr": "2020 Appleby Line B2, Burlington, ON",
-      "compContact": "Peter Parker",
-      "compPhone": 9056351238,
-      "compEmail": "canadacomp_support@gmail.com",
-      "invNum": ["INV449", "INV748", "INV289"]
-
-    },
-    {
-      "compId": "C89472",
-      "compName": "The Computer Edge",
-      "compAddr": "2387 Trafalgar Rd B7, Oakville, ON",
-      "compContact": "Clarke Kent",
-      "compPhone": 9052570082,
-      "compEmail": "compedge_support@gmail.com",
-      "invNum": ["INV021", "INV409", "INV117"]
-
-    },
-    {
-      "compId": "C26543",
-      "compName": "Computer Star",
-      "compAddr": "3100 Ridgeway Dr, Mississauga, ON",
-      "compContact": "Diana Prince",
-      "compPhone": 9052728324,
-      "compEmail": "compstar_support@gmail.com",
-      "invNum": ["INV097", "INV228", "INV008"]
-
-    },
-    {
-      "compId": "C19942",
-      "compName": "Free Geek Toronto",
-      "compAddr": "180 Sudbury St, Toronto, ON",
-      "compContact": "Hamnah Atif",
-      "compPhone": 4165723737,
-      "compEmail": "freegeek_support@gmail.com",
-      "invNum": ["INV095", "INV021", "INV009"]
-
-    },
-    {
-      "compId": "C06137",
-      "compName": "Signa Computer Systems",
-      "compAddr": "3457 Yonge St, North York, ON",
-      "compContact": "Julia Sakamoto",
-      "compPhone": 4164889208,
-      "compEmail": "signacomp_support@gmail.com",
-      "invNum": ["INV921", "INV114", "INV498"]
-
-    },
-    {
-      "compId": "C13538",
-      "compName": "Rosedale Computers",
-      "compAddr": "919 Yonge St, Toronto, ON",
-      "compContact": "Jacklyn Ponce",
-      "compPhone": 4169217673,
-      "compEmail": "rosedale_support@gmail.com",
-      "invNum": ["INV093", "INV036", "INV350"]
-
-    },
-    {
-      "compId": "C76389",
-      "compName": "ASK Computers",
-      "compAddr": "111 Front St E, Toronto, ON",
-      "compContact": "Jimin Park",
-      "compPhone": 4168629595,
-      "compEmail": "askcomp_support@gmail.com",
-      "invNum": ["INV309", "INV688", "INV001"]
-
-    }
-  ]
-
-
+		}
+	]
 }
