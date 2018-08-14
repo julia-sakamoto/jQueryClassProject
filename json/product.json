@@ -2,75 +2,87 @@
 	"product" : [
 		{
 			"prodId" : "AC101",
-			"prodName" : "Acer Chromebook 11, Celeron N3060, 11.6' HD, 4GB DDR3L, 16GB Storage, CB3-132-C4VV",
-			"prodDesc" :"the Acer Chromebook 11 has everything you need. The fast wireless connection keeps you closer than ever, no matter where life takes you. Long-lasting battery life gives you all day to run your favorite Google apps or access your photos, videos, music and documents.",
-			"prodAmt" : "219.99"
+			"prodName" : "Acer Chromebook 11",
+			"prodSpecs" : "Celeron N3060, 11.6'' HD, 4GB DDR3L, 16GB Storage",
+			"prodDesc" : "As the best value 11.6'' Chromebook - the Acer Chromebook 11 has everything you need. The fast wireless connection keeps you closer than ever, no matter where life takes you. Long-lasting battery life gives you all day to run your favorite Google apps or access your photos, videos, music and documents. Acer Chromebook 11 makes life on-the-go easy.",
+			"prodAmt" : 219.99
 		},
 		{
 			"prodId" : "MW102",
 			"prodName" : "Microsoft Wireless Display Adapter",
+			"prodSpecs" : "HDMI (powered through USB)",
 			"prodDesc" :"Wirelessly project what’s on your phone, tablet, or laptop to your big-screen HDTV or monitor.",
-			"prodAmt" : "59.95"
+			"prodAmt" : 59.95
 		},
 		{
 			"prodId" : "RK103",
-			"prodName" : "Redragon K556 RGB LED Backlit Wired Mechanical Gaming Keyboard, Aluminum Base, 104 Standard Keys",
+			"prodName" : "Redragon K556",
+			"prodSpecs" : "RGB LED Backlit Wired Mechanical Gaming Keyboard, Aluminum Base, 104 Standard Keys",
 			"prodDesc" :"To compete at the highest level, you need the fastest mechanical keyboard there is. The Redragon K556 RGB isn't your average gaming keyboard. Not only is it over-engineered and built to take a beating, it is loaded with features including heavy duty metal and ABS construction, double-shot injection molded keycaps, high-end switches with mechanical ultra-last springs, crisp and bright adjustable RED LED backlighting, a gold plated USB connector, and a splash-resistant design.",
-			"prodAmt" : "59.98"
+			"prodAmt" : 59.98
 		},
 		{
 			"prodId" : "GP104",
 			"prodName" : "Google Pixelbook Pen",
+			"prodSpecs" : "",
 			"prodDesc" :"Extremely slim. Handsome look. Beautiful, pixel-dense display. Feels snappy in everyday use. Battery can easily last a full workday.",
-			"prodAmt" : "129.00"
+			"prodAmt" : 129.00
 		},
 		{
 			"prodId" : "DG105",
-			"prodName" : "Dell 24 Gaming Monitor - SE2417HG",
+			"prodName" : "Dell 24 Gaming Monitor",
+			"prodSpecs" : "SE2417HG",
 			"prodDesc" :"This anti-glare monitor can be placed anywhere in the room. Widescreen is perfect for viewing 2 documents side by side or for watching movies.",
-			"prodAmt" : "199.99"
+			"prodAmt" : 199.99
 		},
 		{
 			"prodId" : "BR106",
-			"prodName" : "Brother QL-800 High-Speed Professional Label Printer",
+			"prodName" : "Brother Professional Label Printer",
+			"prodSpecs" : "QL-800",
 			"prodDesc" :"The Brother QL-800 is a professional, high-speed label printer with unique technology that allows you to print in high visibility in black and red on the entire label. Rapidly prints black and white labels for envelopes, packages, file folders, barcodes and assorted business uses.",
-			"prodAmt" : "129.99"
+			"prodAmt" : 129.99
 		},
 		{
 			"prodId" : "SU107",
-			"prodName" : "SanDisk Ultra USB Type-C 128GB Flash Drive (SDCZ450-128G-G46)",
+			"prodName" : "SanDisk Ultra USB Type-C 128GB Flash Drive",
+			"prodSpecs" : "(SDCZ450-128G-G46)",
 			"prodDesc" :"Flash drive for USB Type-C devices. High-speed USB 3.1 performance of up to 150MB/s4. Super-thin, retractable design to protect the small USB Type-C connector",
-			"prodAmt" : "57.89"
+			"prodAmt" : 57.89
 		},
 		{
 			"prodId" : "SB108",
-			"prodName" : "Seagate Backup Plus Slim 1TB Portable External Hard Drive USB 3.0, Silver (STDR1000101)",
+			"prodName" : "Seagate 1TB Portable External Hard Drive",
+			"prodSpecs" : "USB 3.0, Silver (STDR1000101)",
 			"prodDesc" :"With a huge 1TB capacity, you'll be able to store all of your irreplaceable photos, videos, and documents. The slim, metal design makes it easy to slip the hard drive into your bag, and bring it along wherever you go.",
-			"prodAmt" : "74.54"
+			"prodAmt" : 74.54
 		},
 		{
 			"prodId" : "IM109",
-			"prodName" : "Iron Man Mouse Wireless Gold",
+			"prodName" : "Iron Man Mouse",
+			"prodSpecs" : "Wireless Gold",
 			"prodDesc" :"Natural Curves that Fit Your Hand and Smooth-gliding Underside Tips Provide You with Epic Comfort and Control. Blue Wing LED Light Looks Like an Eye Waiting and Watching in the Dark Night.",
-			"prodAmt" : "15.30"
+			"prodAmt" : 15.30
 		},
 		{
 			"prodId" : "RC110",
-			"prodName" : "Rca 7 16Gb Android Tablet With Keyboard Purple 7 In",
+			"prodName" : "RCA 7 Android Tablet 7''",
+			"prodSpecs" : "16GB With Keyboard Purple",
 			"prodDesc" :"Android 5.0 OS (Lollipop). 16GB onboard storage memory, additional memory via microSD card slot. 1.3GHz Quad-Core processor. 1GB DDR of system memory. 7.0' touchscreen, 1024 x 600 resolution",
-			"prodAmt" : "98.60"
+			"prodAmt" : 98.60
 		},
 		{
 			"prodId" : "SM111",
-			"prodName" : "Sony MDRZX310AP/W On-Ear Headphones with Microphone (White)",
+			"prodName" : "Sony MOn-Ear Headphones w/Microphone",
+			"prodSpecs" : "DRZX310AP/W (White)",
 			"prodDesc" :"Integrated microphone and smartphone playback control. Powerful 30mm dome type driver units for clear sound. Lightweight and adjustable housing for rugged durability",
-			"prodAmt" : "39.62"
+			"prodAmt" : 39.62
 		},
 		{
 			"prodId" : "LC112",
-			"prodName" : "Logitech C920 Webcam HD Pro (960-000764)",
+			"prodName" : "Logitech Webcam",
+			"prodSpecs" : "C920 HD Pro (960-000764)",
 			"prodDesc" :"The Full HD, five-element glass lens captures razor-sharp, clear images, while the premium autofocus adjusts smoothly and precisely to provide consistent high definition.",
-			"prodAmt" : "69.31"
+			"prodAmt" : 69.31
 		}
 	]
 }

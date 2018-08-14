@@ -8,19 +8,36 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
 	<script>
-		$(document).on("pagecreate","#homePage",function(event,data) {
-				$('#change').on('click',function() {
-					let nPage = prompt("Enter new page (pagetwo, pagethree):\n\n");
-					console.log("mobile-pagecontainer: change to ",nPage);
-					$( ":mobile-pagecontainer" ).pagecontainer( "change", nPage, { transition: "flip" } );
-				})
-				
-				$('#clear').on('click',function() {
-					$('#_out').html('');
-				})
+	<!--> Here is the showProducts.js code <-->
+	$(document).on("pagecreate", "#productPage", function(event, data) {
+		$.ajax({
+			type: 'GET',
+			url: 'json/product.json', 
+			dataType: 'json',
+			success: parseProduct,
+			error: errMsg
+		});
 
-			});
+		function errMsg(req, status, err) {
+			alert(`${req} ${status} ${err}`);
+		}
+		
+		function parseProduct(data) {
+		
+			var product = data.product;
+			console.log(product);
+
+			for (var i = 0; i < product.length; i++) {
+				var content = "<div data-role='collapsible'><h4>" + product[i].prodName + "\n- $" + product[i].prodAmt.toFixed(2) + "</h4><p id=" + 'prodDesc' + i +"></p><p id=" + 'prodAmt' + i + "></p></div>";
+				
+				$("#products").append(content).collapsibleset('refresh');
+				$("#prodDesc"+i).append(product[i].prodDesc);
+				$("#prodAmt"+i).append();
+			}
+		}
+	});
 	</script>
 </head>
 <body>
@@ -43,13 +60,15 @@
 		</div>
 	</div>
 
-	<div data-role="page" id="productPage" data-title="Products" >
+	<div data-role="page" id="productPage" data-title="Products">
+	
 		<div data-role="header">
+			<a href="index.html" data-icon="back">Go Home</a>
 			<h1>Products</h1>
 		</div>
 
-		<div role="main" class="ui-content">
-			<p id="page2">These are the products</p><br>
+		<div role="main" class="ui-content" >
+			<div data-role="collapsible-set" id="products"></div>
 		</div>
 	</div>
 </body>
