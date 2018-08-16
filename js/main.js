@@ -49,7 +49,7 @@ function parseCustomer(data) {
                         <button id="btnmap" class="map ui-btn" onclick="drawMap('${cust[i].compAddr}', ${i})">Show on Map</button>
 					</div>
                 </div>
-                <div id="canvasMap${i}"></div>
+                <canvas id="canvasMap${i}"></canvas>
             </div>
             `
         );
@@ -155,16 +155,6 @@ function drawMap(addr, i) {
     var lat = 0;
     var lng = 0;
 
-    var geocoder = new google.maps.Geocoder();
-    geocoder.geocode({ 'address': addr}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-            lat = results[0].geometry.location.lat();
-            lng = results[0].geometry.location.lng();
-        } else {
-            alert("Invalid Address");
-        }
-    });
-
     var mapOptions = {
         center: new google.maps.LatLng(lat, lng),
         zoom: 12,   
@@ -181,5 +171,15 @@ function drawMap(addr, i) {
     var info = new google.maps.InfoWindow({
         content: addr,
         maxWidth: 150
+    });
+
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({ 'address': addr}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            lat = results[0].geometry.location.lat();
+            lng = results[0].geometry.location.lng();
+        } else {
+            alert("Invalid Address");
+        }
     });
 }
