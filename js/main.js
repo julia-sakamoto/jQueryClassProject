@@ -41,16 +41,12 @@ function parseCustomer(data) {
                 <p class="compPhone"></p>
                 <p class="compEmail"></p>
 
-                <div class="ui-grid-b">
+                <div class="ui-grid-a">
                     <div class="ui-block-a">
 						<a href="mailto:${cust[i].compEmail}" data-role="button" class="ui-btn"	>Send Email</a>
 					</div>
                     <div class="ui-block-b" class="ui-btn" href="mailto:${cust[i].compAddr}">
 						<div class="ui-btn">Show on Map</div>
-					</div>
-					<div class="ui-block-c" id="${cust[i].compId}">
-						<a onclick="showInv(${i})" class="ui-btn">Show Invoices</a>
-						<div class="showInvoices${i}" style="display: none;"></div>
 					</div>
                 </div>
             </div>
@@ -79,6 +75,9 @@ $(document).on("pagecreate", "#invoicePage", (function() {
 function parseInvoice(data) {
     for (i = 0; i < data.length; i++) {
         var inv = data[i];
+        $(`.showInvID${i}`).append(`
+        <p>Invoice Number: ${inv[0].invNum}</p>
+        `);
 
         for (j = 0; j < inv.length; j++) {
             $(`.showInvoices${i}`).append(`
@@ -90,7 +89,7 @@ function parseInvoice(data) {
             <p>cust Quantity: ${inv[j].product.qty}</p>
             <p>----</p><br>
             </div>
-            `)
+            `);
         }
     }
 }
