@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on("pagecreate", "", (function() {
     $.ajax({
         type: 'GET',
         url: 'json/customer.json', 
@@ -14,7 +14,7 @@ $(document).ready(function() {
         success: parseInvoice,
         error: errMsg
     });
-});
+}));
 
 function errMsg(req, status, err) {
     alert(`${req} ${status} ${err}`);
@@ -42,7 +42,7 @@ function parseCustomer(data) {
 
                 <div class="ui-grid-b">
                     <div class="ui-block-a">
-						<a href="mailto:${cust[i].compEmail}" data-role="button" class="ui-btn">Send Email</a>
+						<a href="mailto:${cust[i].compEmail}" data-role="button" class="ui-btn"	>Send Email</a>
 					</div>
                     <div class="ui-block-b" class="ui-btn" href="mailto:${cust[i].compAddr}">
 						<div class="ui-btn">Show on Map</div>
@@ -108,3 +108,32 @@ function showCust(i) {
 function sendMail(email) {
 	window.location.href = "mailto:" + email;
 }
+
+// Here is the showProducts.js code 
+$(document).on("pagecreate", "#productPage", function(event, data) {
+	$.ajax({
+		type: 'GET',
+		url: 'json/product.json', 
+		dataType: 'json',
+		success: parseProduct,
+		error: errMsg
+	});
+
+	function errMsg(req, status, err) {
+		alert(`${req} ${status} ${err}`);
+	}
+	
+	function parseProduct(data) {
+	
+		var product = data.product;
+		console.log(product);
+
+		for (var i = 0; i < product.length; i++) {
+			var content = "<div data-role='collapsible'><h4>" + product[i].prodName + "\n- $" + product[i].prodAmt.toFixed(2) + "</h4><p id=" + 'prodDesc' + i +"></p><p id=" + 'prodAmt' + i + "></p></div>";
+			
+			$("#products").append(content).collapsibleset('refresh');
+			$("#prodDesc"+i).append(product[i].prodDesc);
+			$("#prodAmt"+i).append();
+		}
+	}
+});
