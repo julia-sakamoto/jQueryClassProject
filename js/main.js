@@ -49,7 +49,7 @@ function parseCustomer(data) {
                         <button id="btnmap" class="map ui-btn" onclick="drawMap('${cust[i].compAddr}', ${i})">Show on Map</button>
 					</div>
                 </div>
-                <canvas id="canvasMap${i}"></canvas>
+                <!--<canvas id="canvasMap${i}"></canvas>-->
             </div>
             `
         );
