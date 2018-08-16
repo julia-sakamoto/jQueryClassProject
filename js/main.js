@@ -24,6 +24,15 @@ function parseCustomer(data) {
     let cust = data.customer;
 
     for (i = 0; i < cust.length; i++) {
+        $("#invoice").append(
+            `
+            <div>
+            <a onclick="showInv(${i})" class="ui-btn">Show Invoice from ${cust[i].compName}</a>
+            <div data-role='collapsible' style="display: none;" class="showInvoices${i}"></div>
+            </div>
+            `
+        );
+
         $("#customer").append(
             `
             <a class="ui-btn moreInfo" onclick="showCust(${i})">${cust[i].compName}</a>
@@ -72,6 +81,7 @@ function parseInvoice(data) {
             <p>Invoice Amount: ${inv[j].invAmt}</p>
             <p>cust ID: ${inv[j].product.prodId}</p>
             <p>cust Quantity: ${inv[j].product.qty}</p>
+            <p>----</p><br>
             </div>
             `)
         }
