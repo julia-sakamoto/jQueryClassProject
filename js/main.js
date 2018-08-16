@@ -1,17 +1,9 @@
-$(document).on("pagecreate", "", (function() {
+$(document).on("pagecreate", "#homePage", (function() {
     $.ajax({
         type: 'GET',
         url: 'json/customer.json', 
         dataType: 'json',
         success: parseCustomer,
-        error: errMsg
-    });
-    
-    $.ajax({
-        type: 'GET',
-        url: 'json/invoice.json', 
-        dataType: 'json',
-        success: parseInvoice,
         error: errMsg
     });
 }));
@@ -72,6 +64,17 @@ function parseCustomer(data) {
         $(`.${i} .compEmail`).append(cust[i].compEmail + "<br>");
     }
 }
+
+$(document).on("pagecreate", "#invoicePage", (function() {
+    
+    $.ajax({
+        type: 'GET',
+        url: 'json/invoice.json', 
+        dataType: 'json',
+        success: parseInvoice,
+        error: errMsg
+    });
+}));
 
 function parseInvoice(data) {
     for (i = 0; i < data.length; i++) {
