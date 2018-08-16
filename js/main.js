@@ -40,13 +40,17 @@ function parseCustomer(data) {
                 <p class="compPhone"></p>
                 <p class="compEmail"></p>
 
-                <div class="controls">
-                    <a class="email ui-btn" href="mailto:${cust[i].compEmail}">Send Email</a>
-                    <a class="map ui-btn" href="mailto:${cust[i].compAddr}">Show on Map</a>
-                </div>
-                <div class="invoices" id="${cust[i].compId}">
-                    <a onclick="showInv(${i})" class="ui-btn">Show Invoices</a>
-                    <div class="showInvoices${i}" style="display: none;"></div>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+						<a href="mailto:${cust[i].compEmail}" data-role="button" class="ui-btn">Send Email</a>
+					</div>
+                    <div class="ui-block-b" class="ui-btn" href="mailto:${cust[i].compAddr}">
+						<div class="ui-btn">Show on Map</div>
+					</div>
+					<div class="ui-block-c" id="${cust[i].compId}">
+						<a onclick="showInv(${i})" class="ui-btn">Show Invoices</a>
+						<div class="showInvoices${i}" style="display: none;"></div>
+					</div>
                 </div>
             </div>
             `
@@ -89,7 +93,7 @@ function showInv(i) {
     if (style === "none")
         $(`.showInvoices${i}`).slideDown();
     else
-        $(`.showInvoices${i}`).slideUp();
+			$(`.showInvoices${i}`).slideUp();
 }
 
 function showCust(i) {
@@ -99,4 +103,8 @@ function showCust(i) {
         $(`.${i}`).slideDown();
     else
         $(`.${i}`).slideUp();
+}
+
+function sendMail(email) {
+	window.location.href = "mailto:" + email;
 }
