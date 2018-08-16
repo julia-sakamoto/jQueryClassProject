@@ -1,28 +1,19 @@
-$.ajax({
-    type: 'GET',
-    url: 'json/customer.json', 
-    dataType: 'json',
-    success: parseCustomer,
-    error: errMsg
-});
-
-/*
-$.ajax({
-    type: 'GET',
-    url: 'json/product.json', 
-    dataType: 'json',
-    success: parseProduct,
-    error: errMsg
-});
-*/
-
-
-$.ajax({
-    type: 'GET',
-    url: 'json/invoice.json', 
-    dataType: 'json',
-    success: parseInvoice,
-    error: errMsg
+$(document).ready(function() {
+    $.ajax({
+        type: 'GET',
+        url: 'json/customer.json', 
+        dataType: 'json',
+        success: parseCustomer,
+        error: errMsg
+    });
+    
+    $.ajax({
+        type: 'GET',
+        url: 'json/invoice.json', 
+        dataType: 'json',
+        success: parseInvoice,
+        error: errMsg
+    });
 });
 
 function errMsg(req, status, err) {
@@ -33,7 +24,7 @@ function parseCustomer(data) {
     let cust = data.customer;
 
     for (i = 0; i < cust.length; i++) {
-        $(".customer").append(
+        $("#customer").append(
             `
             <a class="ui-btn moreInfo" onclick="showCust(${i})">${cust[i].compName}</a>
             <div class="${i}" style="display: none;"></div>
@@ -42,7 +33,7 @@ function parseCustomer(data) {
 
         $(`.${i}`).append(
             `
-            <div data-collapsed="true" class="content">
+            <div data-role='collapsible' class="content">
                 <p class="compName"></p>
                 <p class="compAddr"></p>
                 <p class="compContact"></p>
@@ -78,8 +69,8 @@ function parseInvoice(data) {
             <p>Invoice Number: ${inv[j].invNum}</p>
             <p>Invoice Date: ${inv[j].invDate}</p>
             <p>Invoice Amount: ${inv[j].invAmt}</p>
-            <p>Product ID: ${inv[j].product.prodId}</p>
-            <p>Product Quantity: ${inv[j].product.qty}</p>
+            <p>cust ID: ${inv[j].cust.prodId}</p>
+            <p>cust Quantity: ${inv[j].cust.qty}</p>
             </div>
             `)
         }
