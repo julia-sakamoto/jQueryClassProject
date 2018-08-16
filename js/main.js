@@ -46,7 +46,7 @@ function parseCustomer(data) {
                 </div>
                 <div class="invoices" id="${cust[i].compId}">
                     <a onclick="showInv(${i})" class="ui-btn">Show Invoices</a>
-                    <div class="showInvoices${i}"></div>
+                    <div class="showInvoices${i}" style="display: none;"></div>
                 </div>
             </div>
             `
@@ -63,14 +63,15 @@ function parseCustomer(data) {
 function parseInvoice(data) {
     for (i = 0; i < data.length; i++) {
         var inv = data[i];
+
         for (j = 0; j < inv.length; j++) {
             $(`.showInvoices${i}`).append(`
             <div class="inv${j}">
             <p>Invoice Number: ${inv[j].invNum}</p>
             <p>Invoice Date: ${inv[j].invDate}</p>
             <p>Invoice Amount: ${inv[j].invAmt}</p>
-            <p>cust ID: ${inv[j].cust.prodId}</p>
-            <p>cust Quantity: ${inv[j].cust.qty}</p>
+            <p>cust ID: ${inv[j].product.prodId}</p>
+            <p>cust Quantity: ${inv[j].product.qty}</p>
             </div>
             `)
         }
