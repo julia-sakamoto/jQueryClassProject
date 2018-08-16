@@ -3,7 +3,7 @@
 		{
 		  "compId": "C12345",
 		  "compName": "PC Shop Computers",
-		  "compAddr": "579 Kerr St, Oakville, ON",
+		  "compAddr": "579 Kerr St Oakville ON",
 		  "compContact": "Tony Stark",
 		  "compPhone": 9054548765,
 		  "compEmail": "pcshop_support@gmail.com",
@@ -12,7 +12,7 @@
 		{
 		  "compId": "C45367",
 		  "compName": "Techville",
-		  "compAddr": "574 Kerr St, Oakville, ON",
+		  "compAddr": "574 Kerr St Oakville ON",
 		  "compContact": "Steve Rogers" ,
 		  "compPhone": 9058498702,
 		  "compEmail": "techville_support@gmail.com",
@@ -21,7 +21,7 @@
 		{
 		  "compId": "C08943",
 		  "compName": "Ridgeway Computers & Electronics",
-		  "compAddr": "3065 Ridgeway Dr, Mississauga, ON",
+		  "compAddr": "3065 Ridgeway Dr Mississauga ON",
 		  "compContact": "Bruce Wayne",
 		  "compPhone": 9056070096,
 		  "compEmail": "ridgeway_support@gmail.com",
@@ -30,7 +30,7 @@
 		{
 		  "compId": "C34876",
 		  "compName": "Canada Computers & Electronics",
-		  "compAddr": "2020 Appleby Line B2, Burlington, ON",
+		  "compAddr": "2020 Appleby Line B2 Burlington ON",
 		  "compContact": "Peter Parker",
 		  "compPhone": 9056351238,
 		  "compEmail": "canadacomp_support@gmail.com",
@@ -39,7 +39,7 @@
 		{
 		  "compId": "C89472",
 		  "compName": "The Computer Edge",
-		  "compAddr": "2387 Trafalgar Rd B7, Oakville, ON",
+		  "compAddr": "2387 Trafalgar Rd B7 Oakville ON",
 		  "compContact": "Clarke Kent",
 		  "compPhone": 9052570082,
 		  "compEmail": "compedge_support@gmail.com",
@@ -49,7 +49,7 @@
 		{
 		  "compId": "C26543",
 		  "compName": "Computer Star",
-		  "compAddr": "3100 Ridgeway Dr, Mississauga, ON",
+		  "compAddr": "3100 Ridgeway Dr Mississauga ON",
 		  "compContact": "Diana Prince",
 		  "compPhone": 9052728324,
 		  "compEmail": "compstar_support@gmail.com",
@@ -58,7 +58,7 @@
 		{
 		  "compId": "C19942",
 		  "compName": "Free Geek Toronto",
-		  "compAddr": "180 Sudbury St, Toronto, ON",
+		  "compAddr": "180 Sudbury St Toronto ON",
 		  "compContact": "Hamnah Atif",
 		  "compPhone": 4165723737,
 		  "compEmail": "freegeek_support@gmail.com",
@@ -67,7 +67,7 @@
 		{
 		  "compId": "C06137",
 		  "compName": "Signa Computer Systems",
-		  "compAddr": "3457 Yonge St, North York, ON",
+		  "compAddr": "3457 Yonge St North York ON",
 		  "compContact": "Julia Sakamoto",
 		  "compPhone": 4164889208,
 		  "compEmail": "signacomp_support@gmail.com",
@@ -76,7 +76,7 @@
 		{
 		  "compId": "C13538",
 		  "compName": "Rosedale Computers",
-		  "compAddr": "919 Yonge St, Toronto, ON",
+		  "compAddr": "919 Yonge St Toronto ON",
 		  "compContact": "Jacklyn Ponce",
 		  "compPhone": 4169217673,
 		  "compEmail": "rosedale_support@gmail.com",
@@ -86,7 +86,7 @@
 		{
 		  "compId": "C76389",
 		  "compName": "ASK Computers",
-		  "compAddr": "111 Front St E, Toronto, ON",
+		  "compAddr": "111 Front St E Toronto ON",
 		  "compContact": "Jimin Park",
 		  "compPhone": 4168629595,
 		  "compEmail": "askcomp_support@gmail.com",

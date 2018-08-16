@@ -45,10 +45,11 @@ function parseCustomer(data) {
                     <div class="ui-block-a">
 						<a href="mailto:${cust[i].compEmail}" data-role="button" class="ui-btn"	>Send Email</a>
 					</div>
-                    <div class="ui-block-b" class="ui-btn" href="mailto:${cust[i].compAddr}">
-						<div class="ui-btn">Show on Map</div>
+                    <div class="ui-block-b" class="ui-btn">
+                        <button id="btnmap" class="map ui-btn" onclick="drawMap('${cust[i].compAddr}', ${i})">Show on Map</button>
 					</div>
                 </div>
+                <div id="canvasMap${i}"></div>
             </div>
             `
         );
@@ -149,3 +150,36 @@ $(document).on("pagecreate", "#productPage", function(event, data) {
 		}
 	}
 });
+
+function drawMap(addr, i) {
+    var lat = 0;
+    var lng = 0;
+
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({ 'address': addr}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            lat = results[0].geometry.location.lat();
+            lng = results[0].geometry.location.lng();
+        } else {
+            alert("Invalid Address");
+        }
+    });
+
+    var mapOptions = {
+        center: new google.maps.LatLng(lat, lng),
+        zoom: 12,   
+        mapTypeId: google.maps.MapTypeId.ROADMAP   
+    };
+    var map = new google.maps.Map($(`#canvasMap${i}`), mapOptions);
+
+    var myMarker = new google.maps.Marker ({
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: new google.maps.LatLng(lat, lng)
+    });
+
+    var info = new google.maps.InfoWindow({
+        content: addr,
+        maxWidth: 150
+    });
+}
