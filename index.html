@@ -8,9 +8,10 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	
+	<script src="./js/main.js"></script>
+
 	<script>
-	<!--> Here is the showProducts.js code <-->
+	// Here is the showProducts.js code 
 	$(document).on("pagecreate", "#productPage", function(event, data) {
 		$.ajax({
 			type: 'GET',
@@ -45,15 +46,12 @@
     <div data-role="page" id="homePage" data-title="Sell More Company Ltd.">
         <div data-role="header">
 			<h1>SellMore</h1>
+			<a id='goCustomerPage' href="#customerPage">Customers</a><br><br>
+			<a id='goProductPage' href="#productPage">Products</a><br><br>
         </div>
 	
 		<div role="main" class="ui-content">
-			<div class='ui-grid-b'>
-				<div class='ui-block-a'>
-					<a id='goCustomerPage' href="#customerPage">Customers</a><br><br>
-					<a id='goProductPage' href="#productPage">Products</a><br><br>
-				</div>
-			</div>
+			<div data-role="collapsible-set" id="customer"></div>
 		</div>
 	</div>
 
